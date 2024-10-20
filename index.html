@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app" class="min-h-screen grid grid-cols-2">
+      <img src="./logo ig.png" class="h-full object-cover">
+      <div class="p-20 space-y-16">
+        <div class="space-y-4">
+          <h1 class="font-bold text-lg">Pembayaran Tagihan Bulanan</h1>
+        <form class="bg-white p-6 rounded-lg border space-y-4">
+          <div>
+            <label>Nomor Telepon</label>
+            <input class="block w-full border px-3 py-2 mt-2" type="text" placeholder="Nomor Telepon">
+          </div>
+         
+        </form>
+        <div class="bg-white p-6 rounded-lg border space-y-4">
+          <h2 class="font-bold text-lg">Metode Pembayaran</h2>
+          <div class="border px-3 py-2">
+            <input type="radio">
+            <span>Transfer Bank</span>
+
+          </div>
+          <button id="payment-submit" class="bg-blue-500 text-white font-bold px-4 py-2">Bayar</button>
+        </div>
+        </div>
+        <div>
+        <p>Hubungi Kami :</p>
+        <p>082137258617</p>
+      </div>
+    </div>
+     
+    </div>
+
+    <div id="payment" class="fixed hidden inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <div class="bg-white p-5 rounded-lg max-w-screen-sm w-full space-y-2">
+        <div>
+          <p class="font-bold">Total Pembayaran</p>
+          <p>85.000</p>
+        </div>
+        <div>
+          <p class="font-bold">No. VA</p>
+          <p>8923892898</p>
+        </div>
+        <button id="payment-close" class="px-3 py-2 border rounded-lg bg-gray-100 text-sm">Tutup</button>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
